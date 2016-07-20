@@ -1,0 +1,11 @@
+
+
+
+/*top*/
+.top_y{ position: relative; z-index: 1;}
+.top_y .wxlayer{position:absolute; background: #fff; border:1px solid #ddd; width:158px; text-align:center; z-index:10; top:30px; left:0px;}
+.top_y .wxlayer img{display:block; margin:10px;}
+.top_y .wxlayer{ display:none;}
+.top_y:hover .wxlayer{ display:block;}
+
+
