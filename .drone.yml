@@ -7,8 +7,16 @@ steps:
   image: alpine
   commands:
   - echo hello world
+  when:
+      branch:
+        exclude:
+          - master
 
 - name: fr
   image: alpine
   commands:
   - echo bonjour monde
+  when:
+      branch:
+        exclude:
+          - master
