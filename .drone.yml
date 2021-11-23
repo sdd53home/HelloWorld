@@ -1,7 +1,9 @@
 kind: pipeline
 name: 测试构建
 steps:
-    -   name: docker构建
-        image: docker
-        commands:
-            - echo Hello World
+    - name: clone代码
+    pull: if-not-exists
+    image: alpine/git
+    commands:
+      - echo Hello World
+      - echo ${DRONE_GITHUB_CLIENT_ID}
