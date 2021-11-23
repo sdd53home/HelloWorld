@@ -1,7 +1,7 @@
 kind: pipeline
-name: default
+name: 测试构建
 steps:
-    -   name: Hello World
-        image: centos
+    -   name: docker构建
+        image: docker
         commands:
             - echo Hello World
