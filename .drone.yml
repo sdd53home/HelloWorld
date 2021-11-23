@@ -1,7 +1,10 @@
 kind: pipeline
-name: git构建
+type: docker
+name: default
+
 steps:
-    -   name: git构建
-        commands:
-            - echo Hello World
-            - echo ${DRONE_GITHUB_CLIENT_ID}
+- name: greeting
+  image: alpine
+  commands:
+  - echo hello
+  - echo world
