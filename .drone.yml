@@ -1,15 +1,8 @@
-#stream test
 kind: pipeline
-name: stream
+name: git构建
 steps:
-  - name: stream test
-    image: ccr.ccs.tencentyun.com/star/stream-test-base
-    commands:
-      - echo 'Hello!'
-      - echo ${DRONE_GITHUB_CLIENT_ID}
-trigger:
-  branch:
-    - stream
-  event:
-    - pull_request
-      
+    -   name: git构建
+        image: alpine/git
+        commands:
+            - echo Hello World
+            - echo ${DRONE_GITHUB_CLIENT_ID}
