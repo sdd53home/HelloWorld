@@ -4,13 +4,8 @@ name: greetin构
 
 steps:
 - name: en
-  image: alpine
   commands:
   - echo hello world
-  when:
-      branch:
-        exclude:
-          - master
 
 - name: fr
   image: alpine
