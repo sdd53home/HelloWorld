@@ -1,6 +1,6 @@
 kind: pipeline
 type: exec
-name: default
+name: defaults
 steps:
    - name: 测试
      commands:
