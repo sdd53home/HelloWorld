@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: greeting构建2
+name: greeting构
 
 steps:
 - name: en
