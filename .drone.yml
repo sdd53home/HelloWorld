@@ -2,7 +2,7 @@ kind: pipeline
 type: exec
 name: defaults2
 steps:
-   - name: 测试
+   - name: 测试2
      commands:
         - echo hello
      when:
