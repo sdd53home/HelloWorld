@@ -1,8 +1,10 @@
 kind: pipeline
-type: docker
+type: exec
 name: default
 steps:
    - name: 测试
-     image: alpine
      commands:
         - echo hello
+     when:
+      branch:
+       - master
