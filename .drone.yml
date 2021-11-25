@@ -13,15 +13,3 @@ steps:
   commands:
   - echo hola
   - echo mundo
-
-- name: fr
-  image: alpine
-  commands:
-  - echo bonjour
-  - echo monde
-
-- name: zh
-  image: alpine
-  commands:
-  - echo 你好
-  - echo 世界
