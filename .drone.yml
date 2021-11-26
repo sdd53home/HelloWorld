@@ -2,7 +2,7 @@ kind: pipeline
 name: greeting
 
 clone:
-  disable: false
+  disable: true
 steps:
 - name: en
   image: alpine
