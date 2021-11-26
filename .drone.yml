@@ -4,8 +4,8 @@ name: greeting
 clone:
   disable: true
 steps:
-- name: ddd
-    image: alpine
+- name: es
+  image: alpine/git
     volumes:
       - name: dns
         path: /etc/hosts
