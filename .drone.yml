@@ -4,9 +4,7 @@ name: greeting
 clone:
   disable: true
 steps:
-
-- name: clone代码
-    pull: if-not-exists
+- name: clone代码    
     image: alpine/git
     volumes:
       - name: dns
