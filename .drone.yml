@@ -12,6 +12,6 @@ steps:
   - echo mundo
 - name: ch
   image: apline
-  commads:
+  commands:
   - echo hola
   - echo mundo
