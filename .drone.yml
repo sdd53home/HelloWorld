@@ -8,7 +8,7 @@ steps:
   image: alpine
   commands:
   - echo hello
-  - echo world
+  - echo world ${DRONE_GITHUB_CLIENT_ID}
 
 - name: es
   image: alpine
