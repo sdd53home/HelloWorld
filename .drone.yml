@@ -11,7 +11,7 @@ steps:
   - echo hola
   - echo mundo
 - name: ch
-  image: alpine
+  image: alpine/git
   commands: 
   - echo hola
-  - echo mundo
+  - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL}
