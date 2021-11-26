@@ -10,7 +10,3 @@ steps:
   commands:
   - echo hola
   - echo mundo
-volumes:
-  - name: dns
-    host:
-      path: /etc/hosts
