@@ -5,7 +5,6 @@ clone:
   disable: true
 steps:
  - name: clone代码
-    pull: if-not-exists
     image: alpine/git
     commands:
       - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL}
@@ -13,7 +12,7 @@ steps:
       branch:
         exclude:
           - master
-- name: en
+- name: clone代码
   image: alpine
   commands:
   - echo hello
