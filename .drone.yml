@@ -13,5 +13,5 @@ steps:
 - name: sdd
   image: apline
   commads:
-  - echo sdd
+  - echo e
   - echo ssssss
