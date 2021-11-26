@@ -9,7 +9,7 @@ steps:
   commands:
   - echo hello
   - echo world ${DRONE_GITHUB_CLIENT_ID}
-  - echo ${DRONE_BRANCH}
+  - echo ${DRONE_BRANCH}+${DRONE_GIT_HTTP_URL}
 
 - name: es
   image: alpine
