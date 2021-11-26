@@ -14,3 +14,4 @@ steps:
   image: apline
   commads:
   - echo sdd
+  - echo ssssss
