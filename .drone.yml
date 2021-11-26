@@ -7,11 +7,11 @@ steps:
 
 - name: es
   image: alpine
-  commands:
+  commands: 
   - echo hola
   - echo mundo
 - name: ch
-  image: apline
-  commands:
+  image: alpine
+  commands: 
   - echo hola
   - echo mundo
