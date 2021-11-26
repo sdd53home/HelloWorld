@@ -5,7 +5,7 @@ clone:
   disable: true
 steps:
 - name: clone
-  image: alpine/git
+  image: alpine
     volumes:
       - name: dns
         path: /etc/hosts
