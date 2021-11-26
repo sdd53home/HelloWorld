@@ -13,5 +13,5 @@ steps:
 - name: sdd
   image: apline
   commads:
-  - echo hello
-  - echo world
+  - echo hola
+  - echo mundo
