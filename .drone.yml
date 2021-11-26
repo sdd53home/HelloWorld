@@ -4,14 +4,6 @@ name: greeting
 clone:
   disable: true
 steps:
- - name: clone代码
-    image: alpine/git
-    commands:
-      - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL}
-    when:
-      branch:
-        exclude:
-          - master
 - name: clone代码
   image: alpine
   commands:
