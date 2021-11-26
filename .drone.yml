@@ -4,17 +4,7 @@ name: greeting
 clone:
   disable: true
 steps:
-- name: clone
-  image: alpine
-  volumes:
-    - name: dns
-      path: /etc/hosts
-  commands:
-     - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL} .
-  when:
-     branch:
-       exclude:
-         - master
+
 - name: es
   image: alpine
   commands:
