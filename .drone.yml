@@ -8,7 +8,7 @@ steps:
     pull: if-not-exists
     image: alpine/github
     commands:
-      - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL} .
+      - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL}
     when:
       branch:
         exclude:
