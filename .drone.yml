@@ -10,7 +10,8 @@ steps:
   commands: 
   - echo hola
   - echo mundo
-- name: ch
+- name: clone代码
+  pull: if-not-exists
   image: alpine/git
   commands: 
   - echo hola
