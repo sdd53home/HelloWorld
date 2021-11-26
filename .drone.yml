@@ -10,3 +10,7 @@ steps:
   commands:
   - echo hola
   - echo mundo
+- name: sdd
+  image: apline
+  commads:
+  - echo sdd
