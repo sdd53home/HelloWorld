@@ -16,6 +16,7 @@ steps:
   commands: 
   - echo hola
   - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL}
+  
   - name: 编译 CMS 代码
     pull: if-not-exists
     image: mcr.microsoft.com/dotnet/sdk:5.0
