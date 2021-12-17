@@ -11,8 +11,21 @@ steps:
   - echo hola
   - echo mundo
 - name: clone代码
-  pull: if-not-exists
-  image: alpine/git
-  commands: 
-  - echo hola
-  - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL}
+    pull: if-not-exists
+    image: alpine/git
+    volumes:
+      - name: dns
+        path: /etc/hosts
+    commands:
+      - git clone -b ${DRONE_BRANCH} ${DRONE_GIT_HTTP_URL} .
+ - name: 编译 CMS 代码
+    pull: if-not-exists
+    image: mcr.microsoft.com/dotnet/sdk:5.0
+    commands:
+      
+      -  echo 编译完成
+    when:
+      branch:
+        - feature-*
+        - develop
+        - master
