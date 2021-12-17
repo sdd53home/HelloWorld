@@ -26,7 +26,7 @@ steps:
       path: /go/pkg
   commands:
     - ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-   
+    - echo 编译完成
   when:
     branch:
       - feature-*
